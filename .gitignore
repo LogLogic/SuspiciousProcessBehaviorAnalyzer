@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables file (if you use one)
+.env
+
+# VSCode or other editor folders
+.vscode/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
+# Personal config or keys (never commit real keys)
+config.py
